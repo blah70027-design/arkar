@@ -14,29 +14,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
     }
 
     .logo {
-      width: 200px;
-      margin-bottom: 20px;
+      width: 150px;
+      margin: 20px 0;
+    }
+
+    .banner {
+      max-width: 100%;
+      width: 90%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 26px;
       color: #FFD700;
+      text-align: center;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
-      margin-bottom: 30px;
       text-align: center;
+      max-width: 600px;
+      margin-bottom: 30px;
     }
 
     .buttons {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 15px;
     }
 
@@ -58,6 +70,10 @@
       background-color: #0088cc;
     }
 
+    .btn.game {
+      background-color: #ff9900;
+    }
+
     .btn:hover {
       opacity: 0.85;
     }
@@ -74,18 +90,22 @@
   <!-- Logo -->
   <img src="images/logo.png" alt="Ye Myat Logo" class="logo" />
 
-  <!-- Title and Description -->
-  <h1>Ye Myat Online Agent</h1>
-  <p>Join now and play exciting slot games with high win chances. Contact us on Viber or Telegram!</p>
+  <!-- Banner -->
+  <img src="images/banner.jpg" alt="Game Banner" class="banner" />
 
-  <!-- Contact Buttons -->
+  <!-- Title -->
+  <h1>Welcome to Ye Myat Online Agent</h1>
+  <p>Play the hottest slot games and win big! Contact us below or go directly to the game.</p>
+
+  <!-- Buttons -->
   <div class="buttons">
+    <a class="btn game" href="https://m.batman688.net/" target="_blank">Play Now</a>
     <a class="btn viber" href="viber://chat?number=+959683278672" target="_blank">Contact on Viber</a>
-    <a class="btn telegram" href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank">Join Telegram</a>
+    <a class="btn telegram" href="https://t.me/"@BooBoo1N target="_blank">Join Telegram</a>
   </div>
 
   <footer>
-    &copy; 2025 Ye Myat | All Rights Reserved.
+    &copy; 2025 Ye Myat | All rights reserved.
   </footer>
 
 </body>
