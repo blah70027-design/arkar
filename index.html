@@ -1,48 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BooBoo1N's Links</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arkar Casino</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #1f1c2c, #928dab);
-      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #111, #000);
+      color: #fff;
       text-align: center;
-      padding: 50px;
+      overflow-x: hidden;
     }
+
+    .container {
+      padding: 50px 20px;
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
+      color: gold;
+      text-shadow: 0 0 10px red, 0 0 20px orange;
+      margin-bottom: 10px;
     }
-    p {
-      font-size: 1.2em;
+
+    p.subtitle {
+      font-size: 1.3em;
+      color: #ccc;
       margin-bottom: 30px;
     }
+
+    .jackpot {
+      font-size: 2em;
+      color: red;
+      animation: pulse 1s infinite alternate;
+      margin-bottom: 30px;
+    }
+
+    @keyframes pulse {
+      from { text-shadow: 0 0 10px red; }
+      to { text-shadow: 0 0 20px red, 0 0 30px orange; }
+    }
+
     .button {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #4CAF50;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
       color: white;
-      text-decoration: none;
+      padding: 15px 30px;
+      margin: 10px;
       border-radius: 10px;
-      transition: 0.3s;
+      text-decoration: none;
+      font-size: 18px;
+      transition: transform 0.2s;
     }
+
     .button:hover {
-      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px gold;
+    }
+
+    .login-box {
+      margin-bottom: 20px;
+    }
+
+    .audio-control {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      font-size: 14px;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hello, I'm BooBoo1N</h1>
-  <p>Connect with me:</p>
+  <!-- 🔊 Background Music -->
+  <audio autoplay loop hidden>
+    <source src="https://www.bensound.com/bensound-music/bensound-funkyelement.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <a class="button" href="https://t.me/BooBoo1N" target="_blank">Telegram</a><br>
-  <a class="button" href="viber://chat?number=+959683278672" target="_blank">Viber</a><br>
-  <a class="button" href="https://your-game-link.com" target="_blank">My Game</a>
+  <div class="container">
+    <h1>🎰 Arkar Casino</h1>
+    <p class="subtitle">အခမဲ့ကစားနိုင်ပါတယ်။ ကံစမ်းပြီး Jackpot ကိုထိုးလိုက်ပါ!</p>
+
+    <div class="jackpot">💥 ဂျက်ပါတ် – ၉၀၀၀၀၀၀ 💥</div>
+
+    <img src="https://i.imgur.com/EZ8Gyhk.jpg" alt="Casino Game" class="banner" />
+
+    <!-- Login / Register fake buttons -->
+    <div class="login-box">
+      <a class="button" href="#">🔐 ဝင်ရန်</a>
+      <a class="button" href="#">📝 အကောင့်ဖွင့်ရန်</a>
+    </div>
+
+    <!-- Main links -->
+    <a class="button" href="https://t.me/BooBoo1N" target="_blank">📱 Telegram</a>
+    <a class="button" href="viber://chat?number=+959683278672" target="_blank">💬 Viber</a>
+    <a class="button" href="https://your-game-link.com" target="_blank">▶️ အခုကစားမည်</a>
+  </div>
+
+  <div class="audio-control">🔊 Music by Bensound</div>
 
 </body>
 </html>
