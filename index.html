@@ -1,112 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ye Myat Online Agent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batman688 Casino</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
     body {
-      background: #1a1a1a;
-      color: #fff;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
       min-height: 100vh;
+      overflow-x: hidden;
+      padding: 20px;
     }
 
-    .logo {
-      width: 150px;
-      margin: 20px 0;
-    }
-
-    .banner {
-      max-width: 100%;
-      width: 90%;
-      border-radius: 12px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-
-    h1 {
-      font-size: 26px;
-      color: #FFD700;
-      text-align: center;
+    .bat-icon {
+      width: 80px;
+      animation: float 2s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px #00f0ff);
       margin-bottom: 10px;
     }
 
-    p {
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .logo-text {
+      font-size: 42px;
+      color: #00f0ff;
+      text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-size: 22px;
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700;
+      animation: blink 1.2s infinite;
+      margin-bottom: 25px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .casino-btn {
+      display: inline-block;
+      background: #00ff99;
+      color: #000;
+      padding: 14px 30px;
+      border-radius: 50px;
       font-size: 18px;
-      text-align: center;
-      max-width: 600px;
-      margin-bottom: 30px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ff99;
+      transition: transform 0.2s;
+    }
+
+    .casino-btn:hover {
+      transform: scale(1.05);
     }
 
     .buttons {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       gap: 15px;
+      width: 100%;
+      max-width: 300px;
     }
 
     .btn {
-      background: #ff0000;
-      color: white;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      color: #fff;
+      padding: 14px;
+      border-radius: 50px;
       text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 8px;
       font-size: 16px;
-      transition: background 0.3s;
-    }
-
-    .btn.viber {
-      background-color: #665CAC;
-    }
-
-    .btn.telegram {
-      background-color: #0088cc;
-    }
-
-    .btn.game {
-      background-color: #ff9900;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff4b2b;
+      transition: transform 0.2s;
     }
 
     .btn:hover {
-      opacity: 0.85;
+      transform: scale(1.05);
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
+    @media (max-width: 480px) {
+      .logo-text {
+        font-size: 32px;
+      }
+
+      .highlight {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <img src="images/logo.png" alt="Ye Myat Logo" class="logo" />
+  <!-- Bat Icon -->
+  <img src="images/bat-icon.png" alt="Bat Icon" class="bat-icon">
 
-  <!-- Banner -->
-  <img src="images/banner.jpg" alt="Game Banner" class="banner" />
+  <!-- Main Title -->
+  <div class="logo-text">Batman688</div>
 
-  <!-- Title -->
-  <h1>Welcome to Ye Myat Online Agent</h1>
-  <p>Play the hottest slot games and win big! Contact us below or go directly to the game.</p>
+  <!-- Subtitle Myanmar -->
+  <div class="subtitle">အမြန်ဆုံးငွေသွင်း! အမြန်ဆုံးငွေထုတ်!</div>
+  <div class="highlight">💸 ခုဘဲကစားလိုက်ပါ! 💸</div>
 
-  <!-- Buttons -->
+  <!-- Game Button -->
+  <a class="casino-btn" href="https://m.batman688.net/" target="_blank">🃏 Batman688 Casino</a>
+
+  <!-- Contacts -->
   <div class="buttons">
-    <a class="btn game" href="https://m.batman688.net/" target="_blank">Play Now</a>
-    <a class="btn viber" href="viber://chat?number=+959683278672" target="_blank">Contact on Viber</a>
-    <a class="btn telegram" href="https://t.me/BooBoo1N" target="_blank">Join Telegram</a>
+    <a class="btn" href="https://t.me/BooBoo1N" target="_blank">📱 Telegram</a>
+    <a class="btn" href="viber://chat?number=+959683278672" target="_blank">💬 Viber</a>
   </div>
-
-  <footer>
-    &copy; 2025 Ye Myat | All rights reserved.
-  </footer>
 
 </body>
 </html>
