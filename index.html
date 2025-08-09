@@ -12,13 +12,6 @@
       padding: 20px;
     }
 
-    h1 {
-      font-size: 48px;
-      color: cyan;
-      text-shadow: 0 0 10px cyan;
-      margin-bottom: 10px;
-    }
-
     .logo {
       width: 100%;
       max-width: 600px;
@@ -62,26 +55,33 @@
   </style>
 </head>
 <body>
-  <h1>Batman688</h1>
 
-  <!-- ✅ Image inserted here -->
- 
+  <!-- Video with raw GitHub link -->
   <video id="video" width="320" height="240" loop playsinline autoplay muted>
-  <source src="https://github.com/yemyatslot/Batman688/blob/f982dfabcf8078166c119a995e31d58bfe629a03/Slot.mp4" type="video/mp4" />
-</video>
-<button id="playBtn">Play Video with Sound</button>
+    <source src="https://raw.githubusercontent.com/yemyatslot/Batman688/f982dfabcf8078166c119a995e31d58bfe629a03/Slot.mp4" type="video/mp4" />
+  </video>
+  <button id="playBtn">Play Video with Sound</button>
 
   <p>အမြန်ဆုံးငွေသွင်း 💸 အမြန်ဆုံး ငွေထုတ်လိုက်ပါ!</p>
 
   <a class="game-link" href="https://m.batman688.net/" target="_blank">🎮 Batman688 Casino</a>
   <a class="button" href="https://t.me/YemyatAgent" target="_blank">📱 Telegram</a>
   <a class="button" href="viber://chat?number=+959683278672" target="_blank">💬 Viber</a>
+
+  <script>
+    const video = document.getElementById('video');
+    const playBtn = document.getElementById('playBtn');
+
+    playBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.muted = false;
+        video.play();
+        playBtn.textContent = 'Pause Video';
+      } else {
+        video.pause();
+        playBtn.textContent = 'Play Video with Sound';
+      }
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
